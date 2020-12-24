@@ -8,12 +8,8 @@ function App() {
 		<>
 			<div className='container'>
 				<Switch>
-					<Route path='/' exact>
-						<Posts />
-					</Route>
-					<Route>
-						<Comments />
-					</Route>
+					<Route path='/' component={Posts} exact />
+					<Route path='/comments' component={Comments} exact />
 				</Switch>
 			</div>
 		</>
