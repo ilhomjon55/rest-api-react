@@ -6,7 +6,6 @@ function Comments() {
 	const [error, setError] = useState(null);
 	const [data, setData] = useState([]);
 	const location = useLocation();
-	console.log(location);
 
 	const dataSource = `https://jsonplaceholder.typicode.com/comments${location.search}`;
 
